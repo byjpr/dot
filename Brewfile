@@ -212,9 +212,9 @@ cask "tailscale"
 cask "tunnelblick"
 cask "yubico-authenticator"
 cask "yubico-yubikey-manager"
+cask "secretive"
 
 # Development/Work
-cask "adobe-creative-cloud"
 cask "android-platform-tools", args: { appdir: "~/Applications" }
 cask "chromedriver"
 cask "eclipse-java"
@@ -235,7 +235,6 @@ cask "visual-studio-code"
 # Virtual Machines (& Docker)
 cask "docker"
 cask "parallels"
-# cask "virtualbox"
 cask "virtualbox-beta"  # supports M1!
 
 # Media
@@ -249,7 +248,6 @@ cask "spotify"
 
 # Communication/Social
 cask "discord"
-cask "skype"
 cask "slack"
 cask "zoomus"
 
@@ -266,20 +264,8 @@ cask "wireshark"
 # Browsers
 cask "firefox"
 cask "firefox-developer-edition"
-cask "google-chrome"
 cask "safari-technology-preview"
 cask "tor-browser"
-
-###############################
-#  Drivers                    #
-###############################
-
-cask "homebrew/cask-drivers/hp-easy-start"
-cask "homebrew/cask-drivers/logitech-camera-settings"
-cask "homebrew/cask-drivers/logi-options-plus"
-cask "homebrew/cask-drivers/logitech-unifying"
-cask "homebrew/cask-drivers/razer-synapse"
-cask "homebrew/cask-drivers/sonos"
 
 ###############################
 #  Fonts                      #
