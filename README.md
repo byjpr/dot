@@ -20,7 +20,7 @@ All of the juicy stuff you're probably looking for is at:
 Designed for macOS, also works on Linux (specifially Debian and Ubuntu):
 
 ```bash
-git clone https://github.com/jakejarvis/dotfiles.git ~/.dotfiles
+git clone https://github.com/byjpr/dot.git ~/.dotfiles
 cd ~/.dotfiles
 ./install.sh
 ```

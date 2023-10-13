@@ -18,7 +18,7 @@ fi
 
 # clone this repo if this script is all by itself and/or we're not in the expected location
 if [[ "$INSTALLER_PATH" != "$DOTFILES_PATH" ]] && [[ ! -d "$DOTFILES_PATH" ]]; then
-  git clone https://github.com/jakejarvis/dotfiles.git "$DOTFILES_PATH"
+  git clone https://github.com/byjpr/dot.git "$DOTFILES_PATH"
 
   echo "Successfully cloned the full repo to '$DOTFILES_PATH'"
   echo "Run install.sh from that directory to continue. Exiting now..."

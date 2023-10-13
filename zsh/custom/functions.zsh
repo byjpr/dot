@@ -62,7 +62,7 @@ extract() {
 }
 
 # Create a git.io short URL (custom slug optional)
-# ex: gitio https://github.com/jakejarvis/dotfiles [jakesdotfiles] => https://git.io/jakesdotfiles
+# ex: gitio https://github.com/byjpr/dot [jakesdotfiles] => https://git.io/jakesdotfiles
 # https://blog.github.com/2011-11-10-git-io-github-url-shortener
 gitio() {
   local PARAMS RESPONSE

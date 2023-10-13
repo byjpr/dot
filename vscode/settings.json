@@ -60,7 +60,7 @@
             "query": "author:${user} state:open repo:${owner}/${repository} sort:updated-desc"
         }
     ],
-    "dotfiles.repository": "https://github.com/jakejarvis/dotfiles.git",
+    "dotfiles.repository": "https://github.com/byjpr/dot.git",
     "material-icon-theme.activeIconPack": "none",
     "material-icon-theme.folders.theme": "specific",
     "editor.minimap.enabled": false,
