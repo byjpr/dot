@@ -9,7 +9,7 @@
 set -e
 
 # Change new hostname here if necessary
-COMPUTER_NAME="JJ-MBA"
+COMPUTER_NAME="dagwr-mbp"
 
 # Quit System Preferences.app if open
 osascript -e 'tell application "System Preferences" to quit'
@@ -37,13 +37,10 @@ defaults write NSGlobalDomain AppleMeasurementUnits -string "Inches"
 defaults write NSGlobalDomain AppleMetricUnits -bool false
 
 # Set the timezone (see `sudo systemsetup -listtimezones` for other values)
-sudo systemsetup -settimezone "America/New_York" >/dev/null
+sudo systemsetup -settimezone "Europe/London" >/dev/null
 
 # Disable audio feedback when volume is changed
 defaults write com.apple.sound.beep.feedback -bool false
-
-# Menu bar: show battery percentage
-defaults write com.apple.menuextra.battery ShowPercent "YES"
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -58,9 +55,6 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 # Disable Resume system-wide
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
-
-# Disable automatic termination of inactive apps
-defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
 ###############################################################################
 # Keyboard & Input                                                            #
@@ -112,8 +106,8 @@ sudo pmset -a autorestart 1
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
 
-# Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+# Set standby delay to 6 hours (default is 1 hour)
+sudo pmset -a standbydelay 21600
 
 # Don't automatically boot when shut down completely and lid opened
 sudo nvram AutoBoot=%00
@@ -126,8 +120,8 @@ sudo nvram AutoBoot=%00
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+# Save screenshots to the Screenshots
+defaults write com.apple.screencapture location -string "${HOME}/Screenshots"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -185,10 +179,6 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Dock                                                                        #
 ###############################################################################
 
-# Automatically hide and show the Dock without delay
-defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock autohide-delay -float 0
-
 # Group windows by application in Mission Control
 defaults write com.apple.dock expose-group-by-app -bool true
 
@@ -196,16 +186,10 @@ defaults write com.apple.dock expose-group-by-app -bool true
 defaults write com.apple.dock wvous-tl-corner -int 0
 defaults write com.apple.dock wvous-tr-corner -int 0
 defaults write com.apple.dock wvous-bl-corner -int 0
-
-# Lock screen via bottom-right hot corner
-defaults write com.apple.dock wvous-br-corner -int 13
-defaults write com.apple.dock wvous-br-modifier -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
 
 # Don't show recently used applications in the Dock
 defaults write com.Apple.Dock show-recents -bool false
-
-# Disable the Launchpad gesture (pinch with thumb and three fingers)
-defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
 ###############################################################################
 # Mail                                                                        #
@@ -247,9 +231,6 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 ###############################################################################
 # Messages                                                                    #
 ###############################################################################
-
-# Disable automatic emoji substitution (i.e. use plain text smileys)
-defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
 
 # Disable smart quotes as it's annoying for messages that contain code
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
