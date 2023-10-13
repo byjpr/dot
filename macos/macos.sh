@@ -12,9 +12,9 @@ sudo softwareupdate --install --all
 sudo softwareupdate --install-rosetta --agree-to-license
 
 # Install Xcode Command Line Tools
-sudo xcode-select --install
+sudo xcode-select --install || true
 # Accept Xcode license
-sudo xcodebuild -license accept
+sudo xcodebuild -license accept || true
 
 # This whole thing kinda hinges on having Homebrew...
 # Check for it and install from GitHub if it's not there
