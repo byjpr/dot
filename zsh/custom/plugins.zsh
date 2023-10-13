@@ -235,7 +235,6 @@ zinit snippet ~/.config/op/plugins.sh
 # oh-my-zsh leftovers
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/lib
 zinit snippet OMZ::lib/clipboard.zsh
-zinit snippet OMZ::lib/termsupport.zsh
 
 # iTerm2 integration
 # shellcheck disable=SC2016
