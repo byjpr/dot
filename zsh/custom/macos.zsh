@@ -83,10 +83,6 @@ alias flush="sudo killall -HUP mDNSResponder; sudo killall mDNSResponderHelper; 
 alias ios_sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 alias watchos_sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator\ \(Watch\).app"
 
-# convenient access to public key
-alias pubkey="pbcopy < ~/.ssh/id_ed25519.pub && echo '=> Public key copied to clipboard.'"
-alias pubkey_rsa="pbcopy < ~/.ssh/id_rsa.pub && echo '=> Public key copied to clipboard.'"
-
 # workaround for lack of tailscale CLI on mac:
 # https://tailscale.com/kb/1080/cli/?tab=macos#using-the-cli
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"

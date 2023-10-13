@@ -19,3 +19,7 @@ fi
 if [[ -f ~/.zshrc.local ]]; then
   source ~/.zshrc.local
 fi
+
+# Secretive Config
+export SSH_AUTH_SOCK=/Users/jp/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+

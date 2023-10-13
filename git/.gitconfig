@@ -9,6 +9,7 @@
 [user]
 	email = 6415727+byjpr@users.noreply.github.com
 	name = Jordan Parker
+	signingKey = /Users/jp/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/PublicKeys/f10ff03111d2cf7b5c870daf3193538c.pub
 [init]
 	defaultBranch = main
 [push]
@@ -59,3 +60,5 @@
 	hunk-header-style = omit
 	line-numbers = true
 	syntax-theme = base16
+[gpg]
+	format = ssh
