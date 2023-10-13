@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
-export BROWSER="/Applications/Firefox.app/Contents/MacOS/firefox"
-# export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+# export BROWSER="/Applications/Firefox.app/Contents/MacOS/firefox"
+export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 # Rosetta hacks for M1
 alias intel="arch -x86_64 /bin/zsh"
