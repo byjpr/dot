@@ -7,9 +7,8 @@
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
 [user]
-	email = jake@jarv.is
-	name = Jake Jarvis
-	signingkey = 3BC6E5776BF379D36F6714802B0C9CF251E69A39
+	email = 6415727+byjpr@users.noreply.github.com
+	name = Jordan Parker
 [init]
 	defaultBranch = main
 [push]
@@ -39,12 +38,8 @@
 	aliases = config --get-regexp alias
 	contributors = shortlog --summary --numbered
 	new = !git init && git symbolic-ref HEAD refs/heads/main
-# [credential]
-# 	helper = osxkeychain
-# [gpg]
-# 	program = /usr/local/MacGPG2/bin/gpg
 [github]
-	user = jakejarvis
+	user = byjpr
 [hub]
 	host = github.com
 [filter "lfs"]
