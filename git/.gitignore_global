@@ -4,6 +4,7 @@
 .AppleDouble
 .LSOverride
 *~
+node_modules
 
 # Icon must end with two \r
 Icon
@@ -31,6 +32,5 @@ Temporary Items
 
 # Misc
 .wakatime-project
-
 
 .sentryclirc
