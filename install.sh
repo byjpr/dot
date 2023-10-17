@@ -38,6 +38,9 @@ ln -sf "$DOTFILES_PATH/starship/config.toml" ~/.config/starship.toml
 # this file will be sourced by .zshrc for more sensitive variables/settings
 touch ~/.zshrc.local
 
+# Install ASDF
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
+
 # prepare zinit manually
 ZINIT_HOME="$HOME/.local/share/zinit/zinit.git"
 if [[ ! -d "$ZINIT_HOME" ]]; then
