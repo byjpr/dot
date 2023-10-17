@@ -24,3 +24,5 @@ fi
 export SSH_AUTH_SOCK=/Users/jp/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
 eval "$(starship init zsh)"
+
+. "$HOME/.asdf/asdf.sh"
